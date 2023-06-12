@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter';
+  background-color: aliceblue;
 }
 
 nav {
@@ -14,17 +15,23 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
+nav p{
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+  color: #47a7ff;
+}
 .nav--logo {
-  max-width: 100px;
+  max-height: 50px;
+  fill: #47a7ff;
 }
 
 .content {
   padding: 1rem;
-  background-color: aliceblue;
 }
 
  .map-container{
   padding: 1rem;
-  height: 400px;
+  height: 700px;
   overflow: hidden;
 } 
