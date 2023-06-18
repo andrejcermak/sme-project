@@ -31,7 +31,7 @@ const WaterQualityPopup = ({ features }) => {
           </div>
           <div className="quality-item">
             <span className="label">Hardness:</span>
-            <span className="value">{features.hardness_value}</span>
+            <span className="value">{features.hardness_value} {features.hardness_unit}</span>
           </div>
           <div className="quality-item">
             <span className="label">Ammonium Ions:</span>
