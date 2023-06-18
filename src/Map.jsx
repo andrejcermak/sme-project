@@ -3,23 +3,21 @@ import { MapContainer, TileLayer, useMap, CircleMarker, Marker, Popup, GeoJSON }
 import markerIcon from './marker-icon-2x.png'
 import 'leaflet/dist/leaflet.css';
 import data from './output.json';
+import WaterQualityPopup from './Popup';
 
 const customIcon = L.icon({
-    iconUrl: markerIcon,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [0, -41],
-  });
+  iconUrl: markerIcon,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [0, -41],
+});
 
-  function GetMarkers(){
-    return data.features
-    .map(feature => 
-    <CircleMarker center={feature.geometry.coordinates.reverse()}>
-        <Popup>
-          {feature.properties.hardness_value}
-          {feature.properties.iron_value}
-        </Popup>
-      </CircleMarker>)
+function GetMarkers(){
+  return data.features
+  .map(feature => 
+  <CircleMarker center={feature.geometry.coordinates.reverse()}>
+      <WaterQualityPopup features={feature.properties}/>
+    </CircleMarker>)
 }
 
 export default function Map(){

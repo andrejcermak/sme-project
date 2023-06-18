@@ -1,0 +1,34 @@
+.water-quality-popup {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .street-name {
+    margin: 0 0 10px;
+  }
+  
+  .quality-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quality-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .value {
+    margin-left: 5px;
+  }
+  
+  .limit{
+    margin-right: auto;
+  }
