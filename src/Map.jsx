@@ -15,7 +15,7 @@ const customIcon = L.icon({
 function GetMarkers(){
   return data.features
   .map(feature => 
-  <CircleMarker center={feature.geometry.coordinates.reverse()}>
+  <CircleMarker radius={2} center={feature.geometry.coordinates.reverse()}>
       <WaterQualityPopup features={feature.properties}/>
     </CircleMarker>)
 }
