@@ -18,6 +18,7 @@
   .quality-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 5px;
   }
   
@@ -27,8 +28,5 @@
   
   .value {
     margin-left: 5px;
-  }
-  
-  .limit{
-    margin-right: auto;
+    margin-left: auto;
   }
